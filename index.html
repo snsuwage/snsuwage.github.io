@@ -1,23 +1,119 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>snsuwage.github.io by snsuwage</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-  </head>
-  <body>
-      hallo.
-  </body>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title> - jsFiddle demo</title>
+  
+  <script type='text/javascript' src='http://code.jquery.com/jquery-1.9.1.js'></script>
+  
+  
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  
+  <style type='text/css'>
+    
+  </style>
+  
+</head>
+<body>
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+  
+
+
+<script type='text/javascript'>//<![CDATA[ 
+
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'spline'
+        },
+        title: {
+            text: 'Fortschritt Masterarbeit'
+        },
+        subtitle: {
+            text: 'Irregular time data in Highcharts JS'
+        },
+        xAxis: {
+            type: 'datetime',
+            dateTimeLabelFormats: { // don't display the dummy year
+                month: '%e. %b',
+                year: '%b'
+            },
+            title: {
+                text: 'Datum'
+            }
+        },
+        yAxis: [
+            { title: { text: 'Anzahl Seiten' } },
+            { title: { text: 'Anzahl Wörter' }, opposite: true }
+        ],
+
+        tooltip: {
+            headerFormat: '<b>{series.name}</b><br>',
+            pointFormat: '{point.x:%e. %b}: {point.y:.2f} m'
+        },
+
+        series:[{
+            name: 'Seiten',
+		yAxis: 0,
+            data: [
+			
+[Date.UTC(2014, 08, 14, 21, 28, 14), 8],
+[Date.UTC(2014, 08, 15, 23, 45, 01), 8],
+[Date.UTC(2014, 08, 16, 23, 45, 01), 9],
+[Date.UTC(2014, 08, 17, 23, 45, 01), 12],
+[Date.UTC(2014, 08, 18, 23, 45, 01), 13],
+[Date.UTC(2014, 08, 19, 21, 45, 18), 13],
+[Date.UTC(2014, 08, 19, 21, 45, 20), 13],
+[Date.UTC(2014, 08, 19, 21, 45, 20), 13],
+[Date.UTC(2014, 08, 19, 21, 45, 21), 13],
+[Date.UTC(2014, 08, 19, 21, 45, 22), 13],
+[Date.UTC(2014, 08, 19, 21, 45, 23), 13],
+[Date.UTC(2014, 08, 19, 21, 48, 21), 13],
+[Date.UTC(2014, 08, 19, 22, 15, 36), 13],
+[Date.UTC(2014, 08, 19, 22, 48, 31), 13],
+
+]
+         },{
+
+	name: 'Wörter',
+	yAxis: 1,
+       	data: [
+			
+
+[Date.UTC(2014, 08, 14, 21, 28, 14), 632],
+[Date.UTC(2014, 08, 15, 23, 45, 01), 710],
+[Date.UTC(2014, 08, 16, 23, 45, 01), 1017],
+[Date.UTC(2014, 08, 17, 23, 45, 01), 1372],
+[Date.UTC(2014, 08, 18, 23, 45, 01), 1483],
+[Date.UTC(2014, 08, 19, 21, 32, 30), 1487],
+[Date.UTC(2014, 08, 19, 21, 44, 40), 1487],
+[Date.UTC(2014, 08, 19, 21, 45, 18), 1487],
+[Date.UTC(2014, 08, 19, 21, 45, 20), 1487],
+[Date.UTC(2014, 08, 19, 21, 45, 20), 1487],
+[Date.UTC(2014, 08, 19, 21, 45, 21), 1487],
+[Date.UTC(2014, 08, 19, 21, 45, 22), 1487],
+[Date.UTC(2014, 08, 19, 21, 45, 23), 1487],
+[Date.UTC(2014, 08, 19, 21, 48, 21), 1487],
+[Date.UTC(2014, 08, 19, 22, 15, 36), 1487],
+[Date.UTC(2014, 08, 19, 22, 48, 31), 1487],
+
+]
+         }]
+    });
+});
+//]]>  
+
+</script>
+
+
+</body>
+
+
 </html>
