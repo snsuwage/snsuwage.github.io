@@ -1,1 +1,118 @@
-Hello World
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Masterarbeit</title>
+  
+  <script type='text/javascript' src='http://code.jquery.com/jquery-1.9.1.js'></script>
+  
+  
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  
+  <style type='text/css'>
+    
+  </style>
+  
+</head>
+<body>
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+  
+
+
+<script type='text/javascript'>//<![CDATA[ 
+
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'spline'
+        },
+        title: {
+            text: 'Fortschritt Masterarbeit'
+        },
+        subtitle: {
+            text: 'Irregular time data in Highcharts JS'
+        },
+        xAxis: {
+            type: 'datetime',
+            dateTimeLabelFormats: {
+                hour: '%H. %M'
+            },
+            title: {
+                text: 'Datum'
+            }
+        },
+        yAxis: [
+            { title: { text: 'Anzahl Seiten' } },
+            { title: { text: 'Anzahl Wörter' }, opposite: true }
+        ],
+        
+         tooltip: {
+             headerFormat: '<b>{series.name}</b><br>',
+             pointFormat: '{point.x:%e. %b}: {point.y:%f}'
+         },
+
+        series:[{
+            name: 'Seiten',
+		yAxis: 0,
+            data: [
+			
+[Date.UTC(2014, 07, 14, 21, 28, 14), 8],
+[Date.UTC(2014, 07, 15, 23, 45, 01), 8],
+[Date.UTC(2014, 07, 16, 23, 45, 01), 9],
+[Date.UTC(2014, 07, 17, 23, 45, 01), 12],
+[Date.UTC(2014, 07, 18, 23, 45, 01), 13],
+[Date.UTC(2014, 07, 19, 21, 45, 18), 13],
+[Date.UTC(2014, 07, 19, 21, 45, 20), 13],
+[Date.UTC(2014, 07, 19, 21, 45, 20), 13],
+[Date.UTC(2014, 07, 19, 21, 45, 21), 13],
+[Date.UTC(2014, 07, 19, 21, 45, 22), 13],
+[Date.UTC(2014, 07, 19, 21, 45, 23), 13],
+[Date.UTC(2014, 07, 19, 21, 48, 21), 13],
+[Date.UTC(2014, 07, 19, 22, 15, 36), 13],
+[Date.UTC(2014, 07, 19, 22, 48, 31), 13],
+
+]
+         },{
+
+	name: 'Wörter',
+	yAxis: 1,
+       	data: [
+			
+
+[Date.UTC(2014, 07, 14, 21, 28, 14), 632],
+[Date.UTC(2014, 07, 15, 23, 45, 01), 710],
+[Date.UTC(2014, 07, 16, 23, 45, 01), 1017],
+[Date.UTC(2014, 07, 17, 23, 45, 01), 1372],
+[Date.UTC(2014, 07, 18, 23, 45, 01), 1483],
+[Date.UTC(2014, 07, 19, 21, 32, 30), 1487],
+[Date.UTC(2014, 07, 19, 21, 44, 40), 1487],
+[Date.UTC(2014, 07, 19, 21, 45, 18), 1487],
+[Date.UTC(2014, 07, 19, 21, 45, 20), 1487],
+[Date.UTC(2014, 07, 19, 21, 45, 20), 1487],
+[Date.UTC(2014, 07, 19, 21, 45, 21), 1487],
+[Date.UTC(2014, 07, 19, 21, 45, 22), 1487],
+[Date.UTC(2014, 07, 19, 21, 45, 23), 1487],
+[Date.UTC(2014, 07, 19, 21, 48, 21), 1487],
+[Date.UTC(2014, 07, 19, 22, 15, 36), 1487],
+[Date.UTC(2014, 07, 19, 22, 48, 31), 1487],
+
+]
+         }]
+    });
+});
+//]]>  
+
+</script>
+
+
+</body>
+
+
+</html>
