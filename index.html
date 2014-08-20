@@ -41,9 +41,8 @@ $(function () {
         },
         xAxis: {
             type: 'datetime',
-            dateTimeLabelFormats: { // don't display the dummy year
-                month: '%e. %b',
-                year: '%b'
+            dateTimeLabelFormats: {
+                hour: '%H. %M'}
             },
             title: {
                 text: 'Datum'
@@ -53,11 +52,6 @@ $(function () {
             { title: { text: 'Anzahl Seiten' } },
             { title: { text: 'Anzahl Wörter' }, opposite: true }
         ],
-
-        tooltip: {
-            headerFormat: '<b>{series.name}</b><br>',
-            pointFormat: '{point.x:%e. %b}: {point.y:}'
-        },
 
         series:[{
             name: 'Seiten',
