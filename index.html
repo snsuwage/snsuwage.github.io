@@ -52,6 +52,11 @@ $(function () {
             { title: { text: 'Anzahl Seiten' } },
             { title: { text: 'Anzahl Wörter' }, opposite: true }
         ],
+        
+         tooltip: {
+             headerFormat: '<b>{series.name}</b><br>',
+             pointFormat: '{point.x:%e. %b}: {point.y:.2f}'
+         },
 
         series:[{
             name: 'Seiten',
